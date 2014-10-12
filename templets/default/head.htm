@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>
+          {dede:global.cfg_webname/}
+        </title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+        <meta name="Copyright" content="">
+        <meta name="robots" content="all">
+        <link href="{dede:global.cfg_templets_skin/}/mystyle/css/master.css" rel="stylesheet" type="text/css">
+      
+<!-- <script type="text/javascript " src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script> -->
+
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/mystyle/js/jquery-1.10.2.min.js"></script> 
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/mystyle/js/touchSwipe.js"></script> 
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/mystyle/js/simpleSlider.js"></script>
+<script>
+    _ROOT ="{dede:global.cfg_cmsurl/}"
+</script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/mystyle/js/common.js"></script>
+                
+            <body>
+                    
+                <div class="top_bg01">
+                    <div class="area head">
+                        <h1>
+                            <a target="_blank" href="http://gzbloem.com/">
+                                <img src="{dede:global.cfg_templets_skin/}/mystyle/images/logo.png" alt="" height="49" width="181">
+                            </a>
+                        </h1>
+                        
+                        <div class="main">
+                            <h2>
+                                广 州 市 宝 蓝 化 妆 品 有 限 公 司 <br />
+                                Guangzhou Borland cosmetics co., LTD
+                            </h2>
+                        </div>
+                        <!-- lang -->
+                        <div class="lang">
+                            <a href="#">中文</a>
+                            <a href="#">English</a>
+                        </div>
+                        <!-- ./lang -->
+                    </div>
+                </div>
+                <div class="nav_con">
+                    <div class="nav">
+                        <ul>
+                            <li class="menu2" onmouseover="this.className='menu1'" onmouseout="this.className='menu2'">
+                                <h2>
+                                    <a target="_blank" href="{dede:global.cfg_cmsurl/}/" title="主页">
+                                        主页
+                                    </a>
+                                </h2>
+                  
+                            </li>
+
+                            {dede:channel type='top' row='10' currentstyle="<li class='hover'><h2><a href='~typelink~' ~rel~ title="~typename~">~typename~</a></h2></li>"}
+
+                            <li class="menu2" onmouseover="this.className='menu1'" onmouseout="this.className='menu2'" >
+                                <h2>
+                                    <a target="_blank" href='[field:typeurl/]' [field:rel/] title="[field:typename/]">
+                                        [field:typename/]
+                                    </a>
+                                </h2>
+     
+                            </li>
+                            {/dede:channel}
+
+
+                         
+                        </ul>
+                    </div>
+                </div>
