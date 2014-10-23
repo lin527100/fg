@@ -49,20 +49,20 @@
                 <div class="nav_con">
                     <div class="nav">
                         <ul>
-                            <li class="menu2" onmouseover="this.className='menu1'" onmouseout="this.className='menu2'">
+                            <li class="menu2" >
                                 <h2>
-                                    <a target="_blank" href="{dede:global.cfg_cmsurl/}/" title="主页">
+                                    <a  href="{dede:global.cfg_cmsurl/}/" title="主页">
                                         主页
                                     </a>
                                 </h2>
                   
                             </li>
 
-                            {dede:channel type='top' row='10' currentstyle="<li class='hover'><h2><a href='~typelink~' ~rel~ title="~typename~">~typename~</a></h2></li>"}
+                            {dede:channel type='top' row='10' currentstyle="<li class='menu2'><h2><a href='~typelink~' style='font-weight:700;' title='~typename~'>~typename~</a></h2> </li>" }
 
-                            <li class="menu2" onmouseover="this.className='menu1'" onmouseout="this.className='menu2'" >
+                            <li class="menu2" >
                                 <h2>
-                                    <a target="_blank" href='[field:typeurl/]' [field:rel/] title="[field:typename/]">
+                                    <a  href='[field:typeurl/]'  title="[field:typename/]">
                                         [field:typename/]
                                     </a>
                                 </h2>

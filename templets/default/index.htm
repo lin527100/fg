@@ -10,34 +10,34 @@
                         <ul>
                     
                             <li>
-                                <a target="_blank" href="http://gzbloem.com/certifi.html">
-                                    <img src="{dede:global.cfg_templets_skin/}/mystyle/images/c387346585963f02a3694ea7aeb3ed66.jpg" alt="广州市排放污染许可证"
+                                <a target="_blank" href="{dede:global.cfg_c_one/}">
+                                    <img src="{dede:global.cfg_c_one/}" alt="营业执照"
                                     height="160">
                                 </a>
                                 <p>
-                                    <a target="_blank" href="http://gzbloem.com/certifi.html">
+                                    <a target="_blank" href="{dede:global.cfg_c_one/}">
                                         营业执照
                                     </a>
                                 </p>
                             </li>
                             <li>
-                                <a target="_blank" href="http://gzbloem.com/certifi.html">
-                                    <img src="{dede:global.cfg_templets_skin/}/mystyle/images/c387346585963f02a3694ea7aeb3ed66.jpg" alt="广州市排放污染许可证"
+                                <a target="_blank" href="{dede:global.cfg_c_two/}">
+                                    <img src="{dede:global.cfg_c_two/}" alt="卫生许可证"
                                     height="160">
                                 </a>
                                 <p>
-                                    <a target="_blank" href="http://gzbloem.com/certifi.html">
+                                    <a target="_blank" href="{dede:global.cfg_c_two/}">
                                          卫生许可证
                                     </a>
                                 </p>
                             </li>
                             <li>
-                                <a target="_blank" href="http://gzbloem.com/certifi.html">
-                                    <img src="{dede:global.cfg_templets_skin/}/mystyle/images/c387346585963f02a3694ea7aeb3ed66.jpg" alt="广州市排放污染许可证"
+                                <a target="_blank" href="{dede:global.cfg_c_three/}">
+                                    <img src="{dede:global.cfg_c_three/}" alt="生产许可证"
                                     height="160">
                                 </a>
                                 <p>
-                                    <a target="_blank" href="http://gzbloem.com/certifi.html">
+                                    <a target="_blank" href="{dede:global.cfg_c_three/}">
                                          生产许可证
                                     </a>
                                 </p>
@@ -50,12 +50,21 @@
 
                 <div id="slider">
                     <div class='slider'>
-                        <div class='slide'>
-                         <img width="1000" height="330" src="{dede:global.cfg_templets_skin/}/mystyle/images/bg1.jpg">
-                        </div>
-                        <div class='slide' >
-                         <img width="1000" height="330" src="{dede:global.cfg_templets_skin/}/mystyle/images/bg2.jpg">
-                        </div>
+                        {dede:global.cfg_play_images runphp=yes}
+                                    $str = @me;
+                                    $arr = explode("@@",$str);
+                                    $str = '';
+                                    if(is_array($arr)){
+                                        foreach($arr as $v){
+                                            $str .= '<div class="slide">';
+                                            $str .= '<img width="1000" height="330" src="'.$v.'">';
+                                            $str .= '</div>';
+                                        }
+                                    }
+
+                                    @me=$str;
+                        {/dede:global.cfg_play_images}
+
                     </div>
                 </div><!-- #slider -->
                
@@ -72,7 +81,7 @@
                                     </h3>
                                     <div class="about_con">
                             
-                                            天然化妆品OEM之首.,广州宝蓝化妆品有限公司是一间集化妆品原料研制、配方开发、加工生产一体的专业化妆品OEM代加工公司，加工环境、设备仪器、检测手段、人员素质都符合高品质化妆品的要求，我们待客真诚，和客户互相支持共同前进,高起点的产品为客户成功切入市场、开拓市场,巩固市场、提供了有力保障。“姿泊泉”目前为海内外的几十个化妆品品牌提供加工合作，以优质的服务和可靠的品质赢得了每一个客户的赞誉。。。more更多
+                                           {dede:global.cfg_index_about/}
                                     
                                     </div>
                                 </li>
@@ -81,13 +90,12 @@
                                     生产证书
                                 </h3>
                                 <div class="about_con">
-                                    <a target="_blank" href="http://gzbloem.com/about_2.html">
-                                        <img src="{dede:global.cfg_templets_skin/}/mystyle/images/ff426592011ea24cea1b288246abe581.jpg" alt="集团简介" height="140"
-                                        width="140">
-                                    </a>
-                                    <div class="about_xx">
-                                        生产证书shuoming
-                                    </div>
+                                    <p class="blank10"></p>
+                                     <a target="_blank" href="{dede:global.cfg_c_three/}">
+                                            <img src="{dede:global.cfg_c_three/}" alt="生产许可证" width="313"
+                                            height="140">
+                                        </a>
+                                
                                 </div>
                                 </li>
                                 <li>
@@ -95,22 +103,14 @@
                                     联系我们
                                 </h3>
                                 <div class="about_con">
-                                    <a target="_blank" href="http://gzbloem.com/about_3.html">
-                                        <img src="{dede:global.cfg_templets_skin/}/mystyle/images/ff426592011ea24cea1b288246abe581.jpg" alt="集团简介" height="140"
-                                        width="140">
-                                    </a>
-                                    <div class="about_xx">
-                                            <p>公司名称：</p>
-                                            <p>公司地址：</p>
-                                            <p>联系电话：</p>
-                                            <p>邮箱地址：</p>
-                                            <p>QQ/MSN：</p>
-
-                                    </div>
+                                           {dede:global.cfg_index_contact/}
                                 </div>
                                 </li>
                             </ul>
+                                <p class="blank20">
+                                </p>
                         </div>
+
                 </div>
                 <p class="blank10">
                 </p>
